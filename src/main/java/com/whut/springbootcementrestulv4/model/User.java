@@ -2,7 +2,7 @@ package com.whut.springbootcementrestulv4.model;
 
 import org.apache.ibatis.type.Alias;
 
-@Alias("user")
+@Alias("User")
 public class User
 {
 

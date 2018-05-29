@@ -16,8 +16,6 @@ server:
 mybatis:
    # mybatis配置
     config-location: classpath:/mybatis-config.xml
-      #实体类所做包
-    type-aliases-package: com.whut.springbootcementrestulv4.model
         #mapper.xml所在位置
     mapperLocations: classpath:mapper/*.xml
 

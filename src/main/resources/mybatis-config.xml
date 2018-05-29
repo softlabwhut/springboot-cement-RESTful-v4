@@ -3,10 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-     <properties resource="application.yml">
-
-     </properties>
     <typeAliases>
-        <typeAlias alias="user" type="com.whut.springbootcementrestulv4.model.User"/>
+        <package name="com.whut.springbootcementrestulv4.model"/>
    </typeAliases>
 </configuration>

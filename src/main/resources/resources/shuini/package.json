@@ -2,6 +2,7 @@
   "name": "0211",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://127.0.0.1:8080",
   "dependencies": {
     "antd": "^3.4.3",
     "autoprefixer": "7.1.6",
