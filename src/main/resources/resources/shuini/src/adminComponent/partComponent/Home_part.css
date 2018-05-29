@@ -1,0 +1,34 @@
+#home_part{
+	position: relative;
+	background-color: #fff;
+	height:100%;
+}
+#home_part h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 800;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #00CA79;
+	margin-bottom: 10px;
+}
+#home_part h4{
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-style: italic;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #00CA79;
+}
+#home_part .row .main_box{
+	-moz-border-radius: 15px;     
+	-webkit-border-radius: 15px; 
+	border-radius:15px;
+	text-align: center;
+	height:150px;
+	padding-top: 20px;
+	overflow: hidden;
+	margin-bottom:40px;
+	border:2px solid #a5b6c8;
+	background:#eef3f7
+}

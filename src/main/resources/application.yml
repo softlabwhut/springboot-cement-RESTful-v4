@@ -1,0 +1,28 @@
+spring:
+  #数据源配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/cement_v4.1
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    tomcat:
+      connection-properties: druid.stat.mergeSql=true
+
+
+server:
+   port: 8080
+
+mybatis:
+   # mybatis配置
+    config-location: classpath:/mybatis-config.xml
+      #实体类所做包
+    type-aliases-package: com.whut.springbootcementrestulv4.model
+        #mapper.xml所在位置
+    mapperLocations: classpath:mapper/*.xml
+
+
+
+
+
+

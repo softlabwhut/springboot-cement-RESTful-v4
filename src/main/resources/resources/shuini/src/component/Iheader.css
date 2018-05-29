@@ -1,0 +1,19 @@
+
+.container .box img{
+	width:100%;
+	margin-left:-20px;
+}
+.container nav.box ul a{
+	
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 60px;
+	
+}
+.container .box{
+	float:left;
+	display: inline;
+	margin-top: 10px;
+	padding-top: 0px;
+	
+}

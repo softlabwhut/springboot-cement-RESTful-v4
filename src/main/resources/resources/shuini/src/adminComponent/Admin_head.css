@@ -1,0 +1,26 @@
+.head{
+	
+}
+.head_left{
+	float:left;
+	width:260px;
+	height:70px;
+	background-color: #84C1FF;
+}
+.head_left a{
+	color: green;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 70px;
+	padding-left:42px;
+
+}
+.head_right{
+	background-color: #d0d0d0;
+	height:70px;
+}
+.head_right img{
+	float:right;
+	height:70px;
+	padding-right:50px;
+}

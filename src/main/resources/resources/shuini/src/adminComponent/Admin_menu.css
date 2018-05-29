@@ -1,0 +1,39 @@
+.menu{
+	position: fixed;
+}
+.menu img{
+	width:100px;
+	height:100px;
+	padding:0 0 0 10px;
+
+}
+.menu .fast_exit{
+	font-size: 22px;
+	margin-left: 44px;
+	line-height: 100px;
+}
+
+
+.nav ul{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 20px;
+}
+.nav ul li ul{
+	display:none;
+}
+.nav ul li:hover ul{
+	display:block;
+	padding-left: 20px;
+}
+.nav li{
+	position: relative;
+}
+
+.nav li a{
+	line-height: 40px;
+}
+.nav .fa{
+	margin-right: 10px;
+
+}

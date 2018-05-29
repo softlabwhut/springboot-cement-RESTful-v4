@@ -1,0 +1,48 @@
+#hero{
+	position: relative;
+	height:100%;
+	padding-top:80px;
+}
+#hero .container .pictures{
+	height: 100%;
+	position: relative;
+}
+#hero .container .pictures img{
+	width:100%;
+	height: 100%;
+	position: absolute;
+
+}
+h1{
+	position:relative;
+	top: -400px;
+	text-align: center;
+	font-size: 30px;
+	color: #272727;
+	font-style: italic;
+    font-weight: bold;
+}
+.pictures{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.pictures .button .leftbut{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 45%;
+	left: 10px;
+	background:url(../img/body/icons.png) no-repeat 0 0;
+	cursor: pointer;
+}
+.pictures .button .rightbut{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 45%;
+	right: 10px;
+	background:url(../img/body/icons.png) no-repeat 0 -45px;
+	cursor: pointer;
+}
+		

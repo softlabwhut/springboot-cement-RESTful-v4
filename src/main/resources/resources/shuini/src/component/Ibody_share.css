@@ -1,0 +1,23 @@
+#share{
+	height: 630px;
+	position: relative;
+	padding-top: 80px;
+}
+#share .container h3{
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+    font-weight: normal;
+}
+#share .container hr{
+	height:2px;
+	background-color:skyblue; 
+	border-top:2px dotted #185598;
+}
+#share .content .row .row-1{
+	padding: 15px 20px;
+}
+#share .content .row .row-1 hr{
+	margin: 2px auto;
+
+}
