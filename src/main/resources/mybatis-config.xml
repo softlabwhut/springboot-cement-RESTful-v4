@@ -5,5 +5,5 @@
 <configuration>
     <typeAliases>
         <package name="com.whut.springbootcementrestulv4.model"/>
-   </typeAliases>
+    </typeAliases>
 </configuration>

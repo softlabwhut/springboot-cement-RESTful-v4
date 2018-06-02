@@ -1,6 +1,6 @@
 package com.whut.springbootcementrestulv4.controller;
 
-import com.whut.springbootcementrestulv4.enity.User;
+import com.whut.springbootcementrestulv4.model.User;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 

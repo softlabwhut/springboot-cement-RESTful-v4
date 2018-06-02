@@ -35,9 +35,10 @@ server:
    port: 8080
 
 mybatis:
-   # mybatis全局配置文件
+   # mybatis配置
     config-location: classpath:/mybatis-config.xml
-    mapper-locations: classpath:mapper/*.xml
+        #mapper.xml所在位置
+    mapperLocations: classpath:mapper/*.xml
 
 
 
