@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
-  <select id="selectUserById" parameterType="int" resultType="hashmap">
-    SELECT * FROM USER WHERE ID=#{id}
+<mapper namespace="com.whut.springbootcementrestulv4.dao.UserMapper">
+  <select id="selectUserById"  parameterType="int" resultType="com.whut.springbootcementrestulv4.model.User">
+      SELECT * FROM users WHERE id=#{id}
    </select>
 </mapper>
