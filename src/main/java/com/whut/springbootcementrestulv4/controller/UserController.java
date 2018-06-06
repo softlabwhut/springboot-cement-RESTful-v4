@@ -1,19 +1,26 @@
 package com.whut.springbootcementrestulv4.controller;
 
+import com.whut.springbootcementrestulv4.dao.UsersMapper;
 import com.whut.springbootcementrestulv4.model.User;
+import com.whut.springbootcementrestulv4.service.UsersService;
+import jdk.nashorn.internal.ir.annotations.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-@RequestMapping(value = "/users")  //下面的映射都在 URL /users 下
+@RequestMapping(value = "/users")
 public class UserController {
      //创建线程安全的Map
    static  Map<Integer,User> users=Collections.synchronizedMap(new HashMap<Integer,User>());
 
-    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public User getUser(@PathVariable Integer id){
+   @Autowired
+    UsersService usersService;
+
+    @ RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public User getUserById(@RequestParam("id") Integer id){
         //处理 /users/{id}的get请求，用来获取相应单个id的用户
-         return users.get(id);
+         return usersService.selectUserById(id);
     }
 
     @RequestMapping(value = "/",method = RequestMethod.GET)

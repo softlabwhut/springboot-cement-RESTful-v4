@@ -1,3 +1,5 @@
+server:
+   port: 8080
 spring:
   #数据源配置
   datasource:
@@ -6,9 +8,7 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-    tomcat:
-      connection-properties: druid.stat.mergeSql=true
-
+    connectionProperties: druid.stat.mergeSql=true
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -25,21 +25,16 @@ spring:
     filters: stat,wall,log4j
     maxPoolPreparedStatementsPerConnectionSize: 20
     useGlobalDataSourceStat: true
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
-
-
-
-
-server:
-   port: 8080
 
 mybatis:
    # mybatis全局配置文件
-    config-location: classpath:/mybatis-config.xml
     mapper-locations: classpath:mapper/*.xml
+    type-aliases-package:  com.whut.springbootcementrestulv4.model
     configuration:
       map-underscore-to-camel-case: true
+
+
 
 
 
