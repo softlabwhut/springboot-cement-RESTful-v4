@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router'
 import {Router , Route , hashHistory } from 'react-router';
+import {HostPost} from '../ajax'
 import Login from '../Login';
 import Reg from '../Reg';
 import App from '../App';
@@ -13,6 +14,8 @@ import Register from '../Register';
 
 
 export default class SRoute extends Component {
+
+
     render(){
         return(
             <Router history={browserHistory}>
@@ -25,7 +28,8 @@ export default class SRoute extends Component {
                 <Route path="/user/add" component={UserAdd}/>
                 <Route path="/fetch" component={MyFetch}/>
                 <Route path="/!" component={TestA}/>
-               
+                <Route path="/user/home" component={Admin_app}/>
+
 
             </Router>
         )
