@@ -11,7 +11,7 @@ export default class Ibody_survey extends Component {
   }
   onChangeColor(){
     this.setState({
-      showColor: "green",
+      showColor: "skyblue",
       showWrite: "block"
     })
   }
@@ -65,4 +65,3 @@ export default class Ibody_survey extends Component {
     )
   }
 }
-

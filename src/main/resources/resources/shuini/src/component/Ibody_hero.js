@@ -27,8 +27,8 @@ export default class Ibody_hero extends Component {
   render(){
     return (
       <div id="hero">
-        <div className="container">
-          <div className="pictures">
+        <div className="container" style={{height:630}}>
+          <div className="pictures" >
             <img src={require("../img/body/slider0"+this.state.nowing+".jpg")}  />
             <h1>{this.state.intro[this.state.nowing-1]}</h1>
             <div className="button">
@@ -41,4 +41,3 @@ export default class Ibody_hero extends Component {
     )
   }
 }
-

@@ -10,7 +10,7 @@ import './App.css';
 class App extends Component {
 
   render() {
-    
+
     return (
       <div className="all">
         <div className="head">
@@ -18,10 +18,11 @@ class App extends Component {
         </div>
         <div className="body">
 					<Ibody_hero />
-					<Ibody_survey />
+		      <Ibody_survey/>
 					<Ibody_share />
 					<Ibody_about />
-        </div>   
+
+        </div>
       </div>
     );
   }

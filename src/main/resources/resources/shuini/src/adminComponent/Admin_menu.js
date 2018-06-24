@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Admin_menu.css'
+import { Modal, Button } from 'antd';
+import { browserHistory } from 'react-router';
 
+const confirm = Modal.confirm;
 export default class Admin_menu extends Component {
   constructor(props){
     super(props);
@@ -23,7 +26,17 @@ export default class Admin_menu extends Component {
     this.props.onChange(this.state.choose_num)
   }
   onOut(){
-    return alert("确认退出？")
+    //return alert("确认退出？")
+    confirm({
+    title: '确认退出?',
+    content: '请谨慎操作...',
+    onOk() {
+      browserHistory.push('/');
+    },
+    onCancel() {
+      console.log('Cancel');
+    },
+  });
   }
 
   render(){
@@ -33,7 +46,7 @@ export default class Admin_menu extends Component {
         
         <div className="admin_img">
           <img src={require("../img/admin.jpg")} />
-          <a className="fast_exit" onClick={() => {return alert("确认退出？")}} href='./'>admin</a>
+          <a className="fast_exit" onClick={this.onOut} >admin</a>
         </div>
         <div className="nav"> 
           <ul>

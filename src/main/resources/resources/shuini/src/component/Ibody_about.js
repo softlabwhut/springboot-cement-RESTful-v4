@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './Ibody_about.css'
+import {Layout} from 'antd';
+import './Ibody_about.css';
+const {Footer } = Layout;
 
 
 export default class Ibody_about extends Component {
@@ -41,7 +43,7 @@ export default class Ibody_about extends Component {
         <div className="content col-md-12 col-sm-12">
           <div className="row">
             <div className="row-1 col-md-4 col-sm-4">
-              <h3>关于我们</h3> 
+              <h3>关于我们</h3>
               <li><a className="fa fa-clock-o fa-2x"></a>
                 <h4>2014-2017</h4>
               </li>
@@ -62,12 +64,12 @@ export default class Ibody_about extends Component {
               <h3>联系我们</h3>
               <span className="info">
                 <li>
-                  <i className="fa fa-phone fa-2x"></i> 
+                  <i className="fa fa-phone fa-2x"></i>
                   <a onMouseOver={() => {this.onShowSJ()}}  onMouseOut={() => {this.onHideSJ()}}><h4>13163353507</h4></a>
                 </li>
                 <li>
                   <i className="fa fa-envelope fa-2x"></i>
-                  <h4>178791827@qq.com</h4>
+                  <h4>danielwu927@outlook.com</h4>
                 </li>
                 <li>
                   <i className="fa fa-weixin fa-2x"></i>
@@ -83,8 +85,12 @@ export default class Ibody_about extends Component {
             </div>
           </div>
         </div>
+        <Footer style={{ textAlign: 'center' }} >
+        SmartLab Design ©2018 Powerd By 武汉理工大学智能技术实验室
+        </Footer>
+
       </div>
+
     )
   }
 }
-
