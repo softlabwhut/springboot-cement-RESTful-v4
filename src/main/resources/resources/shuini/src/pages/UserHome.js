@@ -1,22 +1,10 @@
 import React ,{ Component } from 'react';
 import Home_part from '../adminComponent/partComponent/Home_part';
-import News_list from '../adminComponent/partComponent/News_list';
-import Notice_list from '../adminComponent/partComponent/Notice_list';
-import Create_ques from '../adminComponent/partComponent/Create_ques';
 import Ques_temp from '../adminComponent/partComponent/Ques_temp';
-import Regis_ques from '../adminComponent/partComponent/Regis_ques';
-import Ques_invite from '../adminComponent/partComponent/Ques_invite';
-import Create_user from '../adminComponent/partComponent/Create_user';
-import Users_list from '../adminComponent/partComponent/Users_list';
-import Port_list from '../adminComponent/partComponent/Port_list';
-import Create_port from '../adminComponent/partComponent/Create_port';
-import Role_list from '../adminComponent/partComponent/Role_list';
-import Create_role from '../adminComponent/partComponent/Create_role';
-import Syst_para from '../adminComponent/partComponent/Syst_para';
 import Create_news from '../adminComponent/partComponent/Create_news';
-
-
+import QuestInput from '../component/QuesInput';
 import ReactDOM from 'react-dom';
+import UserNoticeList from '../component/UserNoticeList';
 import { Button, Layout, Menu, Icon } from 'antd';
 import './UserHome.css';
 import { Avatar} from 'antd';
@@ -29,9 +17,9 @@ class MyHome extends React.Component{
 			choose_num: 0,
 			choose_arr: [
 							
-							<Notice_list {...this.props} />,
+							<UserNoticeList {...this.props} />,
 							<Ques_temp {...this.props} />,
-							<Ques_invite />,
+							<QuestInput {...this.props}/>,
 							<Create_news {...this.props} />,
 							
 							]
@@ -56,13 +44,13 @@ class MyHome extends React.Component{
  		    <div className="display" style={{display:'flex',justifyContent:'center',marginTop:10}}>
     		<Avatar style={{ backgroundColor: '#87d068'}} icon="user" size="large"/>
     		</div>
-         <div style={{color:'orange' ,textAlign:'center'}}>USER</div>
+         <div style={{color:'orange' ,textAlign:'center',position:'relative'}}>USER</div>
          <Button type="primary" icon="logout" size="small">退出</Button>
       	</div>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['0']} onSelect= {this.onChangeNum.bind(this)} >
         <Menu.Item key="0" >
           <Icon type="user" />
-          <span className="nav-text"  >新闻通知</span>
+          <span className="nav-text" >新闻通知</span>
         </Menu.Item>
         <Menu.Item key="1" >
           <Icon type="video-camera" />
@@ -70,11 +58,11 @@ class MyHome extends React.Component{
         </Menu.Item>
         <Menu.Item key="2">
           <Icon type="upload" />
-          <span className="nav-text" >数据查询</span>
+          <span className="nav-text" >问卷填写</span>
         </Menu.Item>
         <Menu.Item key="3">
           <Icon type="laptop" />
-          <span className="nav-text" >更多</span>
+          <span className="nav-text" >数据查询</span>
         </Menu.Item>
       </Menu>
     </Sider>
