@@ -1,0 +1,73 @@
+#news_list{
+	position: relative;
+	background-color: #fff;
+	height:100%;
+}
+#news_list h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 800;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #00CA79;
+	margin-bottom: 10px;
+}
+#news_list h4{
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-style: italic;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #00CA79;
+}
+button.create_news{
+	-moz-border-radius: 15px;     
+	-webkit-border-radius: 15px; 
+	border-radius:20px;	
+	background-color: #84C1FF;
+	height:36px;
+	cursor:pointer; 
+	margin-bottom: 10px;
+}
+button.action{
+	-moz-border-radius: 15px;     
+	-webkit-border-radius: 15px; 
+	border-radius:9px;
+	background-color: #4cae4c;
+	cursor:pointer; 
+}
+table tr{
+	border-bottom:#d0d0d0 solid 2px;
+}
+.change_page ul li{
+	list-style:none;
+	float:right;
+}
+.change_page .page_name{
+	background-color: #84C1FF;
+	width:70px;
+	height:30px;
+	text-align: center;
+	margin:auto 2px;
+}
+.ques_box form .box_footer input{
+	-moz-border-radius: 15px;     
+	-webkit-border-radius: 15px; 
+	border-radius:9px;
+	background-color: #4cae4c;
+	cursor:pointer; 
+	height: 40px;
+	width: 70px;
+}
+form .form_style{
+	margin:20px 0 20px 0;
+
+}
+form .form_style .form_choose{
+	width:300px;
+}
+
+form .form_style span{
+	display:block;
+	text-align: right;
+}

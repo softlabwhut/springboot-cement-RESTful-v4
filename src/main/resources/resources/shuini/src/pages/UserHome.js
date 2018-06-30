@@ -19,7 +19,7 @@ class MyHome extends React.Component{
 							
 							<UserNoticeList {...this.props} />,
 							<Ques_temp {...this.props} />,
-							<QuestInput {...this.props}/>,
+							<QuestInput {...this.props} />,
 							<Create_news {...this.props} />,
 							
 							]
